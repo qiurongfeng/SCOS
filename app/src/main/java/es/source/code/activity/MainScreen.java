@@ -37,10 +37,10 @@ public class MainScreen extends AppCompatActivity {
     }
 
     private void initData() {
-        adapter.append(new MainScreenData(R.mipmap.dc,"点菜"));
-        adapter.append(new MainScreenData(R.mipmap.dd,"查看订单"));
-        adapter.append(new MainScreenData(R.mipmap.wd,"登录/注册"));
-        adapter.append(new MainScreenData(R.mipmap.bz,"系统帮助"));
+        adapter.append(new MainScreenData(R.mipmap.brush,"宿舍选择"));
+        adapter.append(new MainScreenData(R.mipmap.activity,"查看选择"));
+        adapter.append(new MainScreenData(R.mipmap.people,"登录注册"));
+        adapter.append(new MainScreenData(R.mipmap.decoration_fill,"系统帮助"));
     }
 
     private void initView() {
@@ -77,14 +77,18 @@ public class MainScreen extends AppCompatActivity {
     }
 
     private void onItemClick(MainScreenData data, int position) {
-        //        0点菜，1查看订单，2登录/注册，3系统帮助。
+        //        0宿舍选择，1查看宿舍，2登录/注册，3系统帮助。
         switch (position){
             case 0:
-                //跳转点菜页面
+                Intent select = new Intent(this,Select.class);
+                startActivity(select);
+                //跳转宿舍选择页面
                 break;
 
             case 1:
-                //跳转查看订单页面
+                Intent check = new Intent(this,Check.class);
+                startActivity(check);
+                //跳转查看选择页面
                 break;
 
             case 2:

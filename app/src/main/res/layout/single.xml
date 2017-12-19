@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/sec1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#60c9fffd">
+    <TextView
+        android:id="@+id/single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单人匹配"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <TextView
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="姓名：邱荣锋"
+        android:layout_below="@+id/single"
+     
+        />
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学号：1701220041"
+        android:layout_below="@+id/name"
+        />
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="性别：男"
+        android:layout_below="@+id/number"
+        
+        />
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="校区：大兴"
+        android:layout_below="@+id/sex"
+
+        />
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="年级：17级"
+        android:layout_below="@+id/location"
+
+    />
+    <TextView
+        android:id="@+id/vcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="校验码：abcdf"
+        android:layout_below="@+id/grade"
+
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/sec2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sec1"
+        android:layout_margin="20dp"
+        android:background="#60c9fffd">
+        <TextView
+            android:id="@+id/remain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="剩余宿舍"
+            android:gravity="center"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5号楼：100"
+            android:layout_below="@id/remain" />
+        <TextView
+            android:id="@+id/shisan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13号楼：100"
+            android:layout_below="@+id/five"/>
+        <TextView
+            android:id="@+id/shisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14号楼：100"
+            android:layout_below="@+id/shisan"/>
+        <TextView
+            android:id="@+id/eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8号楼：100"
+            android:layout_below="@+id/shisi"/>
+        <TextView
+            android:id="@+id/nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9号楼：100"
+            android:layout_below="@+id/eight"/>
+        <Button
+            android:id="@+id/select_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nine"
+            android:text="选择宿舍"
+            android:background="#301cdcdc"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="提交"
+            android:background="@drawable/buttonsharp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

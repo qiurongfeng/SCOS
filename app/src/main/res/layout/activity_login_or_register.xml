@@ -12,13 +12,17 @@
     tools:context="es.source.code.activity.LoginOrRegister">
 
     <!-- Login progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+        android:text="在线选宿舍系统"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_logo" />
 
     <ScrollView
         android:id="@+id/login_form"
@@ -26,7 +30,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/email_login_form"
+            android:id="@+id/username_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -36,11 +40,10 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:id="@+id/email"
+                    android:id="@+id/username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="请输入用户名"
-                    android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -65,32 +68,27 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/email_sign_in_button"
+                android:id="@+id/username_sign_in_button"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="#66f5ce0b"
+                android:background="@drawable/buttonsharp_new"
                 android:text="登录"
                 android:textStyle="bold" />
-            <ProgressBar
-                style="@android:style/Widget.ProgressBar.Small"
-                android:id="@+id/progressbar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:visibility="visible"/>
+
             <Button
-                android:id="@+id/email_return_button"
+                android:id="@+id/username_return_button"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="#66f5ce0b"
+                android:background="@drawable/buttonsharp_new"
                 android:text="返回"
                 android:textStyle="bold" />
 
 
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
