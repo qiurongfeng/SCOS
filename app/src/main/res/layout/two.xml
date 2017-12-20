@@ -108,18 +108,27 @@
             android:layout_height="wrap_content"
             android:text="9号楼：100"
             android:layout_below="@+id/eight"/>
-        <Button
+        <TextView
             android:id="@+id/select_single"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/nine"
             android:text="选择宿舍"
+            android:textSize="20dp"
             android:background="#301cdcdc"/>
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_single"
+            android:entries="@array/Data">
+
+        </Spinner>
         <LinearLayout
             android:id="@+id/first_hang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/select_single"
+            android:layout_below="@id/sp1"
             android:layout_margin="8dp">
             <TextView
                 android:layout_width="wrap_content"
@@ -151,6 +160,7 @@
                 android:background="@drawable/editsharp"/>
         </LinearLayout>
         <Button
+            android:id="@+id/submit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

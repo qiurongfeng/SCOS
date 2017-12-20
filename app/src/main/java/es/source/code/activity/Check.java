@@ -36,10 +36,21 @@ public class Check extends Activity{
         initView();
         isLogin();
         setUI();
+//        isChoose();
+
 
     }
 
-
+//    private void isChoose(){   //s数据造假
+//        SharedPreferences sharedPreferences = getSharedPreferences("shared", MODE_PRIVATE);
+//        String choice_status = sharedPreferences.getString("choice_status", "");
+//        if (choice_status.equals("1")) {
+//            String building = sharedPreferences.getString("building","");
+//            String room = sharedPreferences.getString("room","");
+//            mBuliding.setText("楼号："+building);
+//            mRoom.setText("房间号："+room);
+//        }
+//    }
     private void isLogin(){
         SharedPreferences sharedPreferences = getSharedPreferences("shared",MODE_PRIVATE);
         String loginStatus= sharedPreferences.getString("login_status","2");
@@ -129,6 +140,14 @@ public class Check extends Activity{
                       mBuliding.setTextColor(Color.parseColor("#FFEF1115"));
                       mRoom.setText("房间号：您还未选择，请到选宿舍界面选择！");
                       mRoom.setTextColor(Color.parseColor("#FFEF1115"));
+                      SharedPreferences sharedPreferences = getSharedPreferences("shared", MODE_PRIVATE);
+                      String choice_status = sharedPreferences.getString("choice_status", "");
+                      if (choice_status.equals("1")) {
+                          String building = sharedPreferences.getString("building","");
+                          String room = sharedPreferences.getString("room","");
+                          mBuliding.setText("楼号："+building);
+                          mRoom.setText("房间号："+room);
+                      }
                   }
 
 

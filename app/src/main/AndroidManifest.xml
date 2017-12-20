@@ -49,6 +49,7 @@
         <activity android:name=".Select_4" />
         <activity android:name=".Check" />
         <activity android:name=".LoginSuccess"/>
+        <activity android:name=".ChooseSucess"/>
     </application>
 
 </manifest>

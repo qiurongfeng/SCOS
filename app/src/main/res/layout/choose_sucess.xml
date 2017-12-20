@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/login_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_success"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/login_mess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择成功！"
+            android:layout_below="@+id/login_success"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <Button
+            android:id="@+id/lookup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_mess"
+            android:layout_centerHorizontal="true"
+            android:text="查看选择情况"
+            android:textSize="20dp"
+            android:layout_margin="40dp"/>
+    </RelativeLayout>
+</LinearLayout>

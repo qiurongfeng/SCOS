@@ -126,6 +126,7 @@ private void getInfo(){
                     editor.putString("gender",jsonObject1.getString("gender"));
                     editor.putString("vcode",jsonObject1.getString("vcode"));
                     editor.putString("location",jsonObject1.getString("location"));
+                    editor.putString("grade",jsonObject1.getString("grade"));
                     editor.commit();
                 }else {
                     Toast.makeText(Select.this,"该用户不存在！",Toast.LENGTH_LONG).show();
