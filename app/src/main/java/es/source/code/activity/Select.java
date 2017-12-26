@@ -33,10 +33,22 @@ public class Select extends Activity {
         getInfo();
         setContentView(R.layout.select);
         initview();
-
+        isLogin();
 
 
     }
+
+    private void isLogin(){
+        SharedPreferences sharedPreferences = getSharedPreferences("shared",MODE_PRIVATE);
+        String loginStatus= sharedPreferences.getString("login_status","2");
+        if (loginStatus.equals("2")){
+            Toast.makeText(Select.this,"请先登陆",Toast.LENGTH_LONG).show();
+            Intent i = new Intent(Select.this,LoginOrRegister.class);
+            startActivity(i);
+            finish();
+        }
+    }
+
 private void initview(){
     btn1 = (Button) findViewById(R.id.one);
     btn2 = (Button)findViewById(R.id.two);
